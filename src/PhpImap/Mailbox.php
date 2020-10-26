@@ -1376,6 +1376,8 @@ class Mailbox
         }
         $attachment->charset = (isset($charset) and !empty(\trim($charset))) ? $charset : null;
         $attachment->emlOrigin = $emlOrigin;
+        $attachment->sizeInBytes = isset($partStructure->bytes) ? $partStructure->bytes : null;
+
 
         $attachment->addDataPartInfo($dataInfo);
 

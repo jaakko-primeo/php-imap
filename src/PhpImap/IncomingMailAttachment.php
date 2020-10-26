@@ -32,6 +32,9 @@ class IncomingMailAttachment
     /** @var bool|null */
     public $emlOrigin;
 
+    /** @var int|null */
+    public $sizeInBytes;
+
     /** @var string|null */
     private $file_path;
 
